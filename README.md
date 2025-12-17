@@ -1,16 +1,43 @@
-# USER-MANAGEMENT TASK
+# User Management Application
 
-## Task
-● Display a list of users (use
-https://jsonplaceholder.typicode.com/users as mock data);
-● Use css / scss for styling (do not use frameworks);
-● Add a search box to the list that allows searching by user name;
-● The design of the solution is free to choose, there is no
-predetermined design.
-● Submit the result to GitHub and forward the link to e-mail.
+A React-based user management system with full CRUD operations. 
 
-Bonus points:
-● add a form for adding a new user and update the list when added;
-● add delete user;
-● add user change.
 
+## Features
+
+### Core Requirements ✅
+- **User List Display** - Fetches and displays users from API
+- **Search Functionality** - Real-time search by user name
+- **Custom Styling** - CSS/SCSS without UI frameworks
+- **Responsive Design** - Mobile-friendly interface
+- **Add User** - Form to create new users with validation
+- **Edit User** - Modify existing user information
+- **Delete User** - Remove users from the list
+- **Confirmation Dialogs** - Prevent accidental deletions
+
+## Getting Started
+
+```bash
+# Install dependencies
+yarn install
+
+# Start development server
+yarn start
+```
+
+The application will open at `http://localhost:3000`
+
+
+## TODO / Roadmap
+
+- [ ] Split UserModal into smaller, reusable components
+- [ ] Add API error handling and loading states
+- [ ] Implement environment variables (.env) for API configuration
+- [ ] Add tooltips for better UX
+- [ ] Implement keyboard shortcuts (Esc to close modals, Enter to submit, etc.)
+- [ ] Expand SCSS variables for better theming
+- [ ] Form validation improvements
+- [ ] Pagination for large user lists
+- [ ] Sort functionality (by name, email, etc.)
+- [ ] Advanced filtering options
+- [ ] Add comprehensive unit and integration tests
