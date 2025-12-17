@@ -1,0 +1,177 @@
+.data-table-container {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-slate-200);
+  box-shadow: var(--shadow-sm);
+  background-color: var(--color-white);
+  overflow: hidden;
+}
+
+.data-table-empty {
+  width: 100%;
+  padding: 3rem;
+  text-align: center;
+  background-color: var(--color-white);
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-slate-200);
+  box-shadow: var(--shadow-sm);
+  color: var(--color-slate-500);
+}
+
+/* Grid Layout */
+.grid-table {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr 1fr 100px;
+  width: 100%;
+  min-width: 800px; /* Ensure horizontal scroll on small screens */
+}
+
+.grid-table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.grid-header {
+  display: contents;
+}
+
+.grid-header-cell {
+  background-color: var(--color-slate-100);
+  padding: 1rem 1.5rem;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-slate-600);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--color-slate-200);
+  position: sticky;
+  top: 0;
+}
+
+.grid-header-cell.align-right {
+  text-align: right;
+}
+
+.grid-row {
+  display: contents;
+}
+
+.grid-cell {
+  padding: 1rem 1.5rem;
+  font-size: 0.875rem;
+  font-family: var(--font-mono);
+  color: var(--color-slate-600);
+  border-bottom: 1px solid var(--color-slate-200);
+  display: flex;
+  align-items: center;
+}
+
+.grid-cell.primary {
+  color: var(--color-slate-700);
+}
+
+.grid-cell.align-right {
+  justify-content: flex-end;
+}
+
+/* Row Styling */
+.grid-row-bg {
+  grid-column: 1 / -1;
+  background-color: var(--color-white);
+  transition: background-color 150ms;
+}
+
+.grid-row:nth-child(even) .grid-cell {
+  background-color: var(--color-white);
+}
+
+.grid-row:nth-child(odd) .grid-cell {
+  background-color: var(--color-slate-50);
+}
+
+.grid-row.is-editing .grid-cell {
+  background-color: rgba(239, 246, 255, 0.5); /* blue-50/50 */
+}
+
+.grid-row:not(.is-editing):hover .grid-cell {
+  background-color: rgba(239, 246, 255, 0.3); /* blue-50/30 */
+  cursor: pointer;
+}
+
+/* Inputs */
+.edit-input {
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  font-family: var(--font-mono);
+  border: 1px solid var(--color-blue-300);
+  border-radius: 0.25rem;
+  outline: none;
+  background-color: var(--color-white);
+}
+
+.edit-input:focus {
+  box-shadow: 0 0 0 2px var(--color-blue-500);
+  border-color: var(--color-blue-500);
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  opacity: 0.6;
+  transition: opacity 150ms;
+}
+
+.grid-row:hover .action-buttons {
+  opacity: 1;
+}
+
+.btn-icon {
+  width: 1rem;
+  height: 1rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 150ms;
+}
+
+.btn-edit {
+  color: var(--color-blue-600);
+}
+
+.btn-edit:hover {
+  color: var(--color-blue-700);
+}
+
+.btn-delete {
+  color: var(--color-red-500);
+}
+
+.btn-delete:hover {
+  color: var(--color-red-700);
+}
+
+.btn-save {
+  padding: 0.375rem;
+  color: var(--color-green-600);
+  border-radius: 0.375rem;
+}
+
+.btn-save:hover {
+  background-color: var(--color-green-100);
+}
+
+.btn-cancel {
+  padding: 0.375rem;
+  color: var(--color-slate-500);
+  border-radius: 0.375rem;
+}
+
+.btn-cancel:hover {
+  background-color: var(--color-slate-200);
+}

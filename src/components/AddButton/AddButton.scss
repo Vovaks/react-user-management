@@ -1,0 +1,35 @@
+.add-button {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--color-blue-600);
+  color: var(--color-white);
+  border-radius: 9999px;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 150ms,
+    background-color 150ms;
+  z-index: 40;
+}
+
+.add-button:hover {
+  background-color: var(--color-blue-700);
+  transform: scale(1.1);
+}
+
+.add-button:focus {
+  outline: none;
+  box-shadow:
+    0 0 0 2px var(--color-blue-600),
+    0 0 0 4px var(--color-white);
+}
+
+.add-icon {
+  width: 2rem;
+  height: 2rem;
+}
