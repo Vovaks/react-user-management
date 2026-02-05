@@ -78,7 +78,7 @@ const App = () => {
     <div className="app-container">
       <div className="app-content">
         <div className="app-header">
-          <h1 className="app-title">User Management</h1>
+          <h1 className="app-title">React User Management</h1>
           <SearchBar
             value={search}
             onChange={(value: string) => dispatch(setSearch(value))}

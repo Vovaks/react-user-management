@@ -41,3 +41,14 @@ The application will open at `http://localhost:3000`
 - [ ] Sort functionality (by name, email, etc.)
 - [ ] Advanced filtering options
 - [ ] Add comprehensive unit and integration tests
+
+
+##  🚀 Run 
+ 1. yarn deploy
+ 2. https://vovaks.github.io/react-user-management/
+
+ ## Screenshots
+
+### Desktop view
+![Table page](.github/images/scrennshot_react_user_management.png)
+![Edit modal window](.github/images/scrennshot_react_user_management_edit.png)
